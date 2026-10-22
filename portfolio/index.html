@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#080d18">
+    <meta name="description" content="Portfolio d’Imed Faci, étudiant en Licence Professionnelle MIAW : compétences, parcours et projets informatiques.">
+    <title>Imed Faci — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="portfolio-body">
+    <a class="skip-link" href="#accueil">Aller au contenu</a>
+    <div class="ambient ambient-one" aria-hidden="true"></div>
+    <div class="ambient ambient-two" aria-hidden="true"></div>
+    <canvas id="starfield" class="starfield" aria-hidden="true"></canvas>
+
+    <header class="topbar">
+        <a class="brand-mark" href="#accueil" aria-label="Imed Faci, accueil"><span class="brand-symbol">IF</span><span class="brand-name">IMED FACI<small>PORTFOLIO</small></span></a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Ouvrir le menu"><span></span><span></span></button>
+        <nav class="site-nav" id="primary-nav" aria-label="Navigation principale">
+            <a href="#accueil" class="active">Accueil</a>
+            <a href="#cv">CV</a>
+            <a href="#apropos">À propos</a>
+            <a href="#competences">Compétences</a>
+            <a href="#parcours">Parcours</a>
+            <a href="#projets">Projets</a>
+            <a href="#veille">Veille</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <span class="online-indicator" title="Portfolio en ligne"><i></i></span>
+    </header>
+
+    <main>
+        <section class="intro-section" id="accueil">
+            <div class="intro-grid" aria-hidden="true"></div>
+            <div class="intro-content">
+                <p class="eyebrow"><span class="eyebrow-dot"></span> Portfolio personnel <span class="eyebrow-separator">/</span> 2026</p>
+                <h1 class="glitch-title" data-text="IMED FACI">IMED FACI</h1>
+                <p class="intro-role"><span class="role-prefix">&lt;</span><span id="typing-role">Étudiant en Licence Professionnelle MIAW</span><span class="typing-caret">_</span><span class="role-prefix">/&gt;</span></p>
+                <div class="intro-facts">
+                    <span><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i> Licence Pro MIAW</span>
+                    <span><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Athis-Mons, France</span>
+                    <span><i class="fa-solid fa-code" aria-hidden="true"></i> Web & systèmes</span>
+                </div>
+                <div class="intro-actions">
+                    <a class="neon-button" href="#projets">Découvrir mes projets <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                    <a class="outline-button" href="#contact"><i class="fa-regular fa-paper-plane" aria-hidden="true"></i> Me contacter</a>
+                </div>
+                <div class="scroll-cue"><span></span> DÉFILER POUR EXPLORER</div>
+            </div>
+            <div class="hero-coordinate" aria-hidden="true">48°42' N<br>2°23' E</div>
+        </section>
+
+        <section class="portfolio-section cv-section" id="cv">
+            <div class="section-heading">
+                <p class="section-index">// 01</p>
+                <h2>CURRICULUM VITAE</h2>
+                <span class="heading-line"></span>
+            </div>
+            <article class="cv-panel reveal">
+                <div class="cv-file-icon"><i class="fa-solid fa-file-lines" aria-hidden="true"></i></div>
+                <p class="cv-filename">CV_IMED_FACI.pdf</p>
+                <p>Consultez mon CV pour découvrir plus en détail mon profil et mon parcours.</p>
+                <a class="neon-button" href="Cv off .pdf" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Ouvrir mon CV</a>
+            </article>
+        </section>
+
+        <section class="portfolio-section" id="apropos">
+            <div class="section-heading">
+                <p class="section-index">// 02</p>
+                <h2>À PROPOS</h2>
+                <span class="heading-line"></span>
+            </div>
+            <div class="about-grid">
+                <article class="terminal-card about-copy reveal">
+                    <div class="terminal-bar"><span></span><span></span><span></span><small>PROFILE.TXT</small></div>
+                    <p class="card-label">&gt; QUI SUIS-JE ?</p>
+                    <p>Étudiant en <strong>Licence Professionnelle MIAW</strong>, après un BTS CIEL, je m’intéresse au développement web et aux systèmes connectés. J’aime comprendre comment les outils numériques fonctionnent, de l’interface jusqu’aux équipements qui collectent les données.</p>
+                    <p class="about-signature"><span class="text-cyan">const</span> motivation = <span class="text-green">"apprendre et créer"</span>;</p>
+                </article>
+                <article class="terminal-card about-focus reveal">
+                    <div class="terminal-bar"><span></span><span></span><span></span><small>FOCUS.JSON</small></div>
+                    <p class="card-label">&gt; CE QUI M’ANIME</p>
+                    <ul class="focus-list">
+                        <li><i class="fa-solid fa-code" aria-hidden="true"></i> Développement web</li>
+                        <li><i class="fa-solid fa-microchip" aria-hidden="true"></i> Programmation embarquée</li>
+                        <li><i class="fa-solid fa-network-wired" aria-hidden="true"></i> Systèmes & réseaux</li>
+                        <li><i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i> Support informatique</li>
+                    </ul>
+                </article>
+                <article class="terminal-card about-status reveal">
+                    <div class="terminal-bar"><span></span><span></span><span></span><small>STATUS.SYS</small></div>
+                    <p class="card-label">&gt; SITUATION</p>
+                    <div class="status-main"><i class="fa-solid fa-circle-check" aria-hidden="true"></i><span>En formation</span></div>
+                    <p>Licence Professionnelle<br><strong>Métiers de l’Informatique — MIAW</strong></p>
+                    <div class="status-divider"></div>
+                    <p class="status-available"><span></span> Recherche d’alternance</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="portfolio-section skills-section" id="competences">
+            <div class="section-heading">
+                <p class="section-index">// 03</p>
+                <h2>COMPÉTENCES</h2>
+                <span class="heading-line"></span>
+                <p class="section-subtitle">Des bases variées, du développement au support informatique.</p>
+            </div>
+            <div class="code-window reveal">
+                <div class="terminal-bar"><span></span><span></span><span></span><small>skills.config</small><em>●●●</em></div>
+                <div class="code-line"><b>01</b><code><span class="text-purple">const</span> <span class="text-cyan">skills</span> = {</code></div>
+                <div class="code-line"><b>02</b><code>&nbsp;&nbsp;web: [<span class="text-green">"HTML"</span>, <span class="text-green">"CSS"</span>, <span class="text-green">"PHP"</span>],</code></div>
+                <div class="code-line"><b>03</b><code>&nbsp;&nbsp;database: [<span class="text-green">"SQL"</span>, <span class="text-green">"MCD/MLD"</span>],</code></div>
+                <div class="code-line"><b>04</b><code>&nbsp;&nbsp;systems: [<span class="text-green">"Windows"</span>, <span class="text-green">"Linux"</span>, <span class="text-green">"Réseaux"</span>],</code></div>
+                <div class="code-line"><b>05</b><code>&nbsp;&nbsp;support: [<span class="text-green">"Installation"</span>, <span class="text-green">"Maintenance"</span>]</code></div>
+                <div class="code-line"><b>06</b><code>};<span class="typing-caret">_</span></code></div>
+            </div>
+            <div class="skill-grid">
+                <article class="skill-card reveal"><div class="skill-icon"><i class="fa-solid fa-code" aria-hidden="true"></i></div><h3>DÉVELOPPEMENT WEB</h3><p>Création de pages et d’applications web.</p><div class="tag-list"><span>HTML</span><span>CSS</span><span>PHP</span></div></article>
+                <article class="skill-card reveal"><div class="skill-icon"><i class="fa-solid fa-database" aria-hidden="true"></i></div><h3>BASES DE DONNÉES</h3><p>Structuration et interrogation des données.</p><div class="tag-list"><span>SQL</span><span>MCD</span><span>MLD</span></div></article>
+                <article class="skill-card reveal"><div class="skill-icon"><i class="fa-solid fa-server" aria-hidden="true"></i></div><h3>SYSTÈMES & RÉSEAUX</h3><p>Environnements et notions de réseaux informatiques.</p><div class="tag-list"><span>Windows</span><span>Linux</span><span>Réseaux</span></div></article>
+                <article class="skill-card reveal"><div class="skill-icon"><i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i></div><h3>SUPPORT INFORMATIQUE</h3><p>Installation, configuration et assistance utilisateur.</p><div class="tag-list"><span>Maintenance</span><span>Matériel</span><span>Assistance</span></div></article>
+                <article class="skill-card reveal"><div class="skill-icon"><i class="fa-solid fa-microchip" aria-hidden="true"></i></div><h3>SYSTÈMES CONNECTÉS</h3><p>Expérience de projet avec carte, capteurs et transmission de mesures.</p><div class="tag-list"><span>ESP32</span><span>Capteurs</span><span>LoRa</span></div></article>
+                <article class="skill-card reveal"><div class="skill-icon"><i class="fa-solid fa-people-group" aria-hidden="true"></i></div><h3>TRAVAIL EN ÉQUIPE</h3><p>Participation à un projet d’étude collectif en BTS CIEL.</p><div class="tag-list"><span>Projet</span><span>Collaboration</span></div></article>
+            </div>
+        </section>
+
+        <section class="portfolio-section journey-section" id="parcours">
+            <div class="section-heading">
+                <p class="section-index">// 04</p>
+                <h2>PARCOURS & EXPÉRIENCES</h2>
+                <span class="heading-line"></span>
+            </div>
+            <div class="timeline-list">
+                <article class="journey-card reveal">
+                    <span class="journey-dot"></span><div class="journey-meta"><span class="journey-date">2026 — Présent</span><span class="journey-type">FORMATION</span></div>
+                    <h3>Licence Professionnelle MIAW</h3><p class="journey-place">Métiers de l’Informatique</p><p>Formation spécialisée dans le développement d’applications web.</p>
+                </article>
+                <article class="journey-card reveal">
+                    <span class="journey-dot"></span><div class="journey-meta"><span class="journey-date">2026</span><span class="journey-type">FORMATION</span></div>
+                    <h3>BTS CIEL</h3><p class="journey-place">Lycée polyvalent de Cachan</p><p>Projet d’étude : Composteur Connecté, programmation et traitement de données.</p>
+                </article>
+                <article class="journey-card reveal">
+                    <span class="journey-dot"></span><div class="journey-meta"><span class="journey-date">2023</span><span class="journey-type">FORMATION</span></div>
+                    <h3>Baccalauréat STI2D</h3><p class="journey-place">Lycée Jean Macé</p><p>Baccalauréat technologique sciences et technologies de l’industrie.</p>
+                </article>
+                <article class="journey-card reveal">
+                    <span class="journey-dot"></span><div class="journey-meta"><span class="journey-date">Expérience en entreprise</span><span class="journey-type">STAGE</span></div>
+                    <h3>Stagiaire Technicien Informatique</h3><p class="journey-place">Keolis · Mennecy</p><p>Installation et configuration de postes, maintenance matérielle et réseau, support utilisateurs.</p>
+                </article>
+                <article class="journey-card reveal">
+                    <span class="journey-dot"></span><div class="journey-meta"><span class="journey-date">Découverte professionnelle</span><span class="journey-type">STAGE</span></div>
+                    <h3>Stage découverte</h3><p class="journey-place">Cabinet AXL Architecture</p><p>Immersion professionnelle, organisation et tâches administratives.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="portfolio-section projects-section" id="projets">
+            <div class="section-heading">
+                <p class="section-index">// 05</p>
+                <h2>PROJETS</h2>
+                <span class="heading-line"></span>
+                <p class="section-subtitle">Quelques réalisations issues de ma formation et de mon parcours.</p>
+            </div>
+            <div class="project-grid">
+                <a class="showcase-card showcase-feature reveal" href="composteur.html">
+                    <div class="showcase-image"><img src="IMAGE1.png" alt="Prototype du composteur connecté" loading="lazy"><span class="image-overlay"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></span></div>
+                    <div class="showcase-body"><div class="showcase-meta"><span>PROJET D’ÉTUDE</span><span class="showcase-year">BTS CIEL</span></div><h3>Composteur Connecté</h3><p>Intégration de la partie Compost, traitement des données et suivi connecté du système.</p><div class="tag-list"><span>ESP32</span><span>Capteurs</span><span>LoRa</span><span>Blynk</span></div><span class="showcase-link">VOIR LA PRÉSENTATION <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span></div>
+                </a>
+                <article class="showcase-card reveal">
+                    <div class="showcase-placeholder"><i class="fa-solid fa-globe" aria-hidden="true"></i><span>HTML <b>×</b> CSS</span></div>
+                    <div class="showcase-body"><div class="showcase-meta"><span>PROJET PERSONNEL</span><span class="showcase-year">2026</span></div><h3>Portfolio Web</h3><p>Conception de ce portfolio personnel pour présenter mon parcours, mes compétences et mes projets.</p><div class="tag-list"><span>HTML</span><span>CSS</span><span>Responsive</span></div></div>
+                </article>
+                <article class="showcase-card reveal">
+                    <div class="showcase-placeholder showcase-placeholder-purple"><i class="fa-solid fa-headset" aria-hidden="true"></i><span>SUPPORT <b>×</b> RÉSEAU</span></div>
+                    <div class="showcase-body"><div class="showcase-meta"><span>EXPÉRIENCE</span><span class="showcase-year">KEOLIS</span></div><h3>Technicien informatique</h3><p>Interventions sur les postes de travail, configuration matérielle et réseau, assistance aux utilisateurs.</p><div class="tag-list"><span>Maintenance</span><span>Postes</span><span>Support</span></div></div>
+                </article>
+            </div>
+        </section>
+
+        <section class="portfolio-section watch-section" id="veille">
+            <div class="section-heading">
+                <p class="section-index">// 06</p>
+                <h2>VEILLE INFORMATIQUE</h2>
+                <span class="heading-line"></span>
+                <p class="section-subtitle">Des sujets récents autour de la cybersécurité et des technologies du web.</p>
+                <p class="watch-updated"><i class="fa-regular fa-clock" aria-hidden="true"></i> Sélection du 22 octobre 2026</p>
+            </div>
+            <div class="watch-grid">
+                <article class="watch-card reveal">
+                    <div class="watch-card-top"><span class="watch-category"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i> CYBERSÉCURITÉ WEB</span><time datetime="2026-10-20">20 OCT. 2026</time></div>
+                    <h3>Fuites de données : les applications web en première ligne</h3>
+                    <p>Le CERT-FR revient sur près de 200 violations de données d’applications web observées en 2025. De nombreuses exfiltrations ont été rendues possibles par des actions simples, sans faille technique complexe.</p>
+                    <div class="watch-takeaway"><strong>À retenir</strong><span>La sécurité dépend aussi des accès et de la configuration des applications.</span></div>
+                    <a href="https://cert.cyber.gouv.fr/cti/CERTFR-2026-CTI-008/" target="_blank" rel="noopener noreferrer" class="watch-source">Lire le retour d’expérience du CERT-FR <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                </article>
+                <article class="watch-card reveal">
+                    <div class="watch-card-top"><span class="watch-category"><i class="fa-solid fa-microchip" aria-hidden="true"></i> CRYPTOGRAPHIE</span><time datetime="2026-09-10">10 SEPT. 2026</time></div>
+                    <h3>DNSSEC commence sa transition post-quantique</h3>
+                    <p>Le résolveur 1.1.1.1 de Cloudflare prend en charge la validation de signatures DNSSEC basées sur ML-DSA-44, un algorithme post-quantique standardisé. C’est une première étape : toute la chaîne DNS doit encore évoluer.</p>
+                    <div class="watch-takeaway"><strong>À retenir</strong><span>Préparer la cryptographie post-quantique demande une migration coordonnée à l’échelle d’Internet.</span></div>
+                    <a href="https://blog.cloudflare.com/post-quantum-dnssec-1111" target="_blank" rel="noopener noreferrer" class="watch-source">Lire l’article de Cloudflare <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                </article>
+                <article class="watch-card reveal">
+                    <div class="watch-card-top"><span class="watch-category"><i class="fa-solid fa-heart-pulse" aria-hidden="true"></i> CYBERSÉCURITÉ</span><time datetime="2026-10-02">02 OCT. 2026</time></div>
+                    <h3>Vulnérabilités numériques dans le secteur de la santé</h3>
+                    <p>Le CERT Santé et le CERT-FR partagent leur retour d’expérience sur des vulnérabilités touchant des logiciels utilisés par les structures de santé et sur l’accompagnement des éditeurs pour les corriger.</p>
+                    <div class="watch-takeaway"><strong>À retenir</strong><span>Une vulnérabilité partagée par de nombreux établissements peut avoir des conséquences à grande échelle.</span></div>
+                    <a href="https://cert.cyber.gouv.fr/cti/CERTFR-2026-CTI-007/" target="_blank" rel="noopener noreferrer" class="watch-source">Lire le rapport du CERT-FR <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                </article>
+            </div>
+        </section>
+
+        <section class="portfolio-section contact-section" id="contact">
+            <div class="section-heading">
+                <p class="section-index">// 07</p>
+                <h2>CONTACT</h2>
+                <span class="heading-line"></span>
+                <p class="section-subtitle">Une opportunité ou une question ? Échangeons.</p>
+            </div>
+            <div class="contact-grid">
+                <a class="contact-card reveal" href="mailto:jibrilfacii@gmail.com"><i class="fa-solid fa-envelope" aria-hidden="true"></i><span><small>EMAIL</small><strong>jibrilfacii@gmail.com</strong></span><i class="fa-solid fa-arrow-up-right-from-square contact-arrow" aria-hidden="true"></i></a>
+                <a class="contact-card reveal" href="tel:+33780634180"><i class="fa-solid fa-phone" aria-hidden="true"></i><span><small>TÉLÉPHONE</small><strong>07 80 63 41 80</strong></span><i class="fa-solid fa-arrow-up-right-from-square contact-arrow" aria-hidden="true"></i></a>
+                <div class="contact-card reveal"><i class="fa-solid fa-location-dot" aria-hidden="true"></i><span><small>LOCALISATION</small><strong>Athis-Mons, France</strong></span></div>
+            </div>
+            <p class="contact-status"><span></span> Disponible pour une recherche d’alternance · Licence Pro MIAW</p>
+        </section>
+    </main>
+
+    <footer class="site-bottom"><a href="#accueil" class="bottom-logo">IF</a><p>© 2026 Imed Faci · Portfolio personnel</p><a href="#accueil">RETOUR EN HAUT <i class="fa-solid fa-arrow-up" aria-hidden="true"></i></a></footer>
+    <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Présentation du projet de composteur connecté réalisé en BTS CIEL : électronique, code embarqué et suivi à distance.">
+    <title>Composteur Connecté — Imed Faci</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="project-detail-body">
+    <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+    <aside class="sidebar">
+        <a class="sidebar-brand" href="index.html#accueil" aria-label="Retour à l’accueil">IF</a>
+        <nav class="sidebar-nav" aria-label="Navigation principale">
+            <a href="index.html#accueil" class="nav-icon" title="Accueil" aria-label="Accueil"><i class="fa-solid fa-house" aria-hidden="true"></i></a>
+            <a href="index.html#certifications" class="nav-icon" title="Compétences" aria-label="Compétences"><i class="fa-solid fa-briefcase" aria-hidden="true"></i></a>
+            <a href="index.html#parcours" class="nav-icon" title="Parcours" aria-label="Parcours"><i class="fa-solid fa-layer-group" aria-hidden="true"></i></a>
+            <a href="index.html#realisations" class="nav-icon active" title="Réalisations" aria-label="Réalisations"><i class="fa-solid fa-globe" aria-hidden="true"></i></a>
+            <a href="index.html#contact" class="nav-icon" title="Contact" aria-label="Contact"><i class="fa-solid fa-user-gear" aria-hidden="true"></i></a>
+        </nav>
+    </aside>
+
+    <main id="contenu" class="main-content project-detail">
+        <header class="project-detail-hero">
+            <a class="project-back-link" href="index.html#realisations"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i> Retour aux réalisations</a>
+            <div class="project-detail-heading">
+                <div>
+                    <p class="project-kicker">Projet d’étude · BTS CIEL</p>
+                    <h1>Composteur <span>Connecté</span></h1>
+                    <p class="project-lead">Un système connecté pour suivre les données du compost, gérer l’arrosage et consulter les mesures à distance.</p>
+                    <div class="project-tags" aria-label="Technologies du projet">
+                        <span>ESP32</span><span>Capteurs</span><span>LoRa</span><span>Blynk</span><span>Électronique</span>
+                    </div>
+                </div>
+                <div class="project-hero-icon" aria-hidden="true"><i class="fa-solid fa-seedling"></i></div>
+            </div>
+            <figure class="project-cover">
+                <img src="IMAGE1.png" alt="Prototype électronique du composteur connecté sur une table" fetchpriority="high">
+                <figcaption>Prototype réalisé pour le projet de composteur connecté.</figcaption>
+            </figure>
+        </header>
+
+        <section class="detail-section project-overview">
+            <div class="detail-section-title">
+                <p class="project-kicker">01 · Le concept</p>
+                <h2>Un compost suivi par la donnée</h2>
+            </div>
+            <div class="overview-copy">
+                <p>Le projet vise à rendre le compost plus autonome et plus facile à surveiller. Les informations recueillies par les capteurs peuvent être consultées sur un tableau de bord, afin de suivre l’évolution du système.</p>
+                <ul class="project-objectives">
+                    <li><i class="fa-solid fa-solar-panel" aria-hidden="true"></i><span><strong>Autonomie énergétique</strong><br>Alimenter le système grâce à l’énergie solaire.</span></li>
+                    <li><i class="fa-solid fa-droplet" aria-hidden="true"></i><span><strong>Gestion de l’eau</strong><br>Récupérer l’eau de pluie et piloter l’arrosage selon le besoin.</span></li>
+                    <li><i class="fa-solid fa-tower-broadcast" aria-hidden="true"></i><span><strong>Suivi à distance</strong><br>Surveiller le compost et transmettre les mesures sans fil.</span></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="detail-section detail-section-tinted">
+            <div class="detail-section-title">
+                <p class="project-kicker">02 · La conception</p>
+                <h2>De l’électronique au programme</h2>
+                <p>Le schéma présente les principaux éléments reliés à la carte : alimentation, écran, capteurs et communication.</p>
+            </div>
+            <figure class="detail-figure detail-figure-wide">
+                <img src="Image5.png" alt="Schéma électronique du projet avec ESP32, écran LCD, alimentation et modules de capteurs" loading="lazy">
+                <figcaption>Schéma de câblage du système électronique.</figcaption>
+            </figure>
+        </section>
+
+        <section class="detail-section detail-code-section">
+            <div class="detail-section-title">
+                <p class="project-kicker">03 · Le développement</p>
+                <h2>Mesures et traitement des données</h2>
+                <p>Le programme embarqué récupère les mesures des capteurs, les traite puis les affiche localement et sur le tableau de bord. Le code fourni montre notamment l’utilisation de l’ESP32, de Blynk, de LoRa et d’un écran LCD.</p>
+            </div>
+            <figure class="detail-figure detail-figure-wide">
+                <img src="Image3.png" alt="Extrait du code embarqué utilisé pour le composteur connecté" loading="lazy">
+                <figcaption>Extrait du programme de lecture, traitement et transmission des données.</figcaption>
+            </figure>
+        </section>
+
+        <section class="detail-section detail-dashboard-section">
+            <div class="detail-section-title">
+                <p class="project-kicker">04 · Le suivi</p>
+                <h2>Un tableau de bord à distance</h2>
+                <p>L’interface rassemble les dernières valeurs et leur évolution, pour suivre les paramètres du compost en un coup d’œil.</p>
+            </div>
+            <figure class="detail-figure detail-figure-wide">
+                <img src="Image4.png" alt="Tableau de bord de suivi des mesures du composteur connecté" loading="lazy">
+                <figcaption>Vue de l’application de suivi et de l’historique des mesures.</figcaption>
+            </figure>
+        </section>
+
+        <section class="detail-section project-summary">
+            <div>
+                <p class="project-kicker">En résumé</p>
+                <h2>Un projet mêlant plusieurs domaines</h2>
+                <p>Ce projet d’équipe m’a permis de travailler sur l’intégration de la partie Compost et le traitement des données, au croisement de l’électronique, de la programmation embarquée et du suivi connecté.</p>
+            </div>
+            <figure class="summary-image">
+                <img src="Image2.png" alt="Présentation des objectifs du projet de composteur connecté" loading="lazy">
+            </figure>
+        </section>
+
+        <footer class="detail-footer">
+            <a class="btn-cv" href="index.html#realisations"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i> Retour à mes projets</a>
+            <a class="detail-contact-link" href="index.html#contact">Me contacter <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+        </footer>
+    </main>
+</body>
+</html>
